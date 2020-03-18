@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #4a4a4a;
+    justify-content: center;
+    height: 90px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    padding: 0 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    justify-content: space-between;
+}
+
+header, .container, nav {
+    display: flex;
+}
+
+.container div, nav div {
+    align-self: center;
+}
+
+.menu-item {
+    margin: 0 20px;
+    padding-left: 10px;
+}
+
+.menu-item:hover {
+    color: black;
+    padding-left: 0;
+}
+.menu-item:hover::before {
+    content: '- ';
+}
