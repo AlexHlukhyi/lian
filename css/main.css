@@ -1,13 +1,14 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #4a4a4a;
     justify-content: center;
-    height: 90px;
+    height: 10vh;
+    max-height: 90px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
     padding: 0 15px;
 }
@@ -15,6 +16,9 @@ header {
 .container {
     width: 100%;
     max-width: 1140px;
+}
+
+header div {
     justify-content: space-between;
 }
 
@@ -22,19 +26,67 @@ header, .container, nav {
     display: flex;
 }
 
-.container div, nav div {
+.container div, nav a {
     align-self: center;
 }
 
-.menu-item {
+nav a, .menu .container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-item {
     margin: 0 20px;
-    padding-left: 10px;
+    padding-left: 16px;
+}
+
+.nav-item:hover {
+    color: black;
+    padding-left: 0;
+}
+.nav-item:hover::before {
+    content: '— ';
+}
+
+.search-item:hover, .logo-item:hover {
+    filter: brightness(0);
+}
+
+.slider-item {
+    display: none;
+    height: 90vh;
+    max-height: 650px;
+    overflow: hidden;
+}
+
+.slider-item img {
+    width: 100%;
+}
+
+.visible {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .container {
+    margin: 33px 0 30px;
+    height: 60px;
+    border-top: #e1e1e1 solid 1px;
+    border-bottom: #e1e1e1 solid 1px;
+    font-weight: bold;
+    color: #4a4a4a;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 20px;
+    align-self: center;
 }
 
 .menu-item:hover {
     color: black;
-    padding-left: 0;
-}
-.menu-item:hover::before {
-    content: '- ';
 }
