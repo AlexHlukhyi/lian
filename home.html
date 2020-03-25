@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css">
+<!--    <script src="js/slider.js"></script>-->
 </head>
 <body>
     <header>
@@ -23,21 +24,37 @@
     </header>
     <main>
         <div class="slider">
-            <div class="slider-item visible">
-                <img src="img/slider/1.jpg" alt="slide1">
+            <div class="slider-item visible" style="background-image: url('img/slider/1.jpg');">
+
             </div>
-            <div class="slider-item">
-                <img src="img/slider/2.jpg" alt="slide2">
+            <div class="slider-item" style="background-image: url('img/slider/2.jpg');">
+
+            </div>
+            <div class="controls" id="controls">
+                <div class="button"><img src="img/prev.png" alt="prev"></div>
+                <div class="container">
+                    <div class="indicators">
+                        <div class="indicator active"></div>
+                        <div class="indicator"></div>
+                    </div>
+                </div>
+                <div class="button"><img src="img/next.png" alt="next"></div>
             </div>
         </div>
         <div class="menu">
             <div class="container">
                 <div class="menu-item"><a href="#">ALL</a></div>
+                <div class="delimiter"></div>
                 <div class="menu-item"><a href="#">LOGO</a></div>
+                <div class="delimiter"></div>
                 <div class="menu-item"><a href="#">MOBILE APP</a></div>
+                <div class="delimiter"></div>
                 <div class="menu-item"><a href="#">WORDPRESS</a></div>
+                <div class="delimiter"></div>
                 <div class="menu-item"><a href="#">WEB DESIGN</a></div>
+                <div class="delimiter"></div>
                 <div class="menu-item"><a href="#">UI/UX</a></div>
+                <div class="delimiter"></div>
                 <div class="menu-item"><a href="#">BRANDING</a></div>
             </div>
         </div>

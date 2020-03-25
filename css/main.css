@@ -8,9 +8,12 @@ header {
     color: #4a4a4a;
     justify-content: center;
     height: 10vh;
+    min-height: 80px;
     max-height: 90px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-    padding: 0 15px;
+    position: relative;
+    padding: 0 30px;
+    z-index: 1;
 }
 
 .container {
@@ -38,6 +41,7 @@ nav a, .menu .container a {
 .nav-item {
     margin: 0 20px;
     padding-left: 16px;
+    white-space: nowrap;
 }
 
 .nav-item:hover {
@@ -52,19 +56,82 @@ nav a, .menu .container a {
     filter: brightness(0);
 }
 
-.slider-item {
-    display: none;
-    height: 90vh;
-    max-height: 650px;
-    overflow: hidden;
+.slider {
+    position: relative;
+    background-color: black;
 }
 
-.slider-item img {
+.slider-item {
+    opacity: 0.9;
+    height: 70vh;
+    max-height: 550px;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.controls {
+    display: flex;
+    position: absolute;
+    top: 0;
     width: 100%;
+    justify-content: space-between;
+    height: 70vh;
+    max-height: 550px;
+}
+
+.indicators {
+    margin: auto auto 25px;
+    display: flex;
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.active {
+    border: black solid 4px;
+}
+
+.indicator:not(.active):hover {
+    border: black solid 1px;
 }
 
 .visible {
     display: block;
+}
+
+.delimiter {
+    width: 1px;
+    height: 32px;
+    transform: rotate(18deg);
+    border-left: 2px solid #e1e1e1;
+}
+
+.button {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 9px;
+    width: 60px;
+    height: 60px;
+}
+
+.button img {
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: white solid 1px;
+    transition: 0.5s;
+}
+
+.button img:hover {
+    border-color: black;
+    background-color: black;
 }
 
 .menu {
@@ -85,6 +152,8 @@ nav a, .menu .container a {
 .menu-item {
     margin: 20px;
     align-self: center;
+    white-space: nowrap;
+    transition: 0.5s;
 }
 
 .menu-item:hover {
