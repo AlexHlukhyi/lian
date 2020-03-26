@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css">
-<!--    <script src="js/slider.js"></script>-->
+    <script src="js/slider.js"></script>
 </head>
 <body>
     <header>
@@ -25,20 +25,29 @@
     <main>
         <div class="slider">
             <div class="slider-item visible" style="background-image: url('img/slider/1.jpg');">
-
+                <div class="slider-text">
+                    <h2>LIAN CREATIVE AGENCY</h2>
+                    <h3>MINIMAL FREELANCE PORTFOLIO</h3>
+                </div>
             </div>
             <div class="slider-item" style="background-image: url('img/slider/2.jpg');">
-
+                <div class="slider-text">
+                    <h2>DESIGN & BRANDINGS</h2>
+                    <h3>WE DELIVER QUALITY RESULTS</h3>
+                </div>
+            </div>
+            <div class="slider-item" style="background-image: url('img/slider/1.jpg');">
+                <div class="slider-text">
+                    <h2>REAL EXPERIENCE</h2>
+                    <h3>QUALITY IN TIME</h3>
+                </div>
             </div>
             <div class="controls" id="controls">
-                <div class="button"><img src="img/prev.png" alt="prev"></div>
+                <div class="button" id="button-previous"><img src="img/prev.png" alt="prev"></div>
                 <div class="container">
-                    <div class="indicators">
-                        <div class="indicator active"></div>
-                        <div class="indicator"></div>
-                    </div>
+                    <div id="indicators"></div>
                 </div>
-                <div class="button"><img src="img/next.png" alt="next"></div>
+                <div class="button" id="button-next"><img src="img/next.png" alt="next"></div>
             </div>
         </div>
         <div class="menu">
@@ -58,12 +67,35 @@
                 <div class="menu-item"><a href="#">BRANDING</a></div>
             </div>
         </div>
-        <div class="content">
-
+        <div class="wrapper">
+            <div class="content">
+                <div class="content-box" style="background-image: url('img/content/1.jpg');"></div>
+                <div class="content-box" style="background-image: url('img/content/2.jpg');"></div>
+                <div class="content-box" style="background-image: url('img/content/3.jpg');"></div>
+                <div class="content-box" style="background-image: url('img/content/4.jpg');"></div>
+                <div class="content-box" style="background-image: url('img/content/5.jpg');"></div>
+                <div class="content-box" style="background-image: url('img/content/6.jpg');"></div>
+                <div class="content-box" style="background-image: url('img/content/7.jpg');"></div>
+                <div class="content-box" style="background-image: url('img/content/8.jpg');"></div>
+                <div class="content-box" style="background-image: url('img/content/9.jpg');"></div>
+            </div>
         </div>
+        <button class="load-more">
+            LOAD MORE
+        </button>
     </main>
     <footer>
-
+        <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="logo-item"></a>
+        <div class="contacts">
+            <a href="#"><div><img src="img/contacts/facebook.png" alt="facebook"></div></a>
+            <a href="#"><div><img src="img/contacts/google.png" alt="google"></div></a>
+            <a href="#"><div><img src="img/contacts/twitter.png" alt="twitter"></div></a>
+            <a href="#"><div><img src="img/contacts/in.png" alt="in"></div></a>
+            <a href="#"><div><img src="img/contacts/wtf.png" alt="idontknowwhatisthat"></div></a>
+            <a href="#"><div><img src="img/contacts/pinterest.png" alt="pinterest"></div></a>
+            <a href="#"><div><img src="img/contacts/instagram.png" alt="instagram"></div></a>
+        </div>
+        <p class="copyright">© <span>2020</span> BY OLEKSANDR HLUKHYI. ALL RIGHTS RESERVED.</p>
     </footer>
 </body>
 </html>
